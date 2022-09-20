@@ -4,7 +4,7 @@ const Button = (props) => {
     let {text} = props;
 
   return (
-    <a href="#productores" className="w-6 flex  p-3 bg-red-500 ">{text}</a>
+    <a style={{letterSpacing: "1.2px"}} href="#productores" className=" w-6 max-w-14rem text-white  mx-3 flex border-round p-3 font-semibold  bg-orange-500 ">{text}</a>
   )
 }
 

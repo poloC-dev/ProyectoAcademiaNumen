@@ -4,7 +4,7 @@ const Tittle = (props) => {
 
   return (
     <div className="px-3">
-        <h2><span className="text-orange-300 ">{color}</span>{nocolor}</h2>
+        <h2><span className="text-orange-500 ">{color}</span>{nocolor}</h2>
     </div>
   );
 };

@@ -28,19 +28,20 @@ const subtittleText = "Our mission is to help grow the local food ecosystem in B
 
 const Seccion1 = () => {
   return (
-    <section className="grid my-2 md:my-2 lg:my-4">
-      <div className="col-12 md:col-6 lg:col-6 bg-green-500">
+    <section className="grid my-2 p-3 md:my-2 lg:my-4">
+      <div className="col-12 pl- mb-3 md:pl-5 md:mb-3 md:col-12 lg:col-6 lg:mb-0">
         <Tittle color ={tittleTextColor} nocolor={tittleTextBlack}/>
         <Subtittle description={subtittleText} />
         {frases.map((item) => (
           <div className="flex p-3" key={item.id}> 
             <i className="pi pi-check-circle pr-2"></i>
-            <p>{item.description}</p>
+            <p className="font-semibold">{item.description}</p>
           </div>
         ))}
         <Button text={buttonText} />
       </div>
-      <div style={{ backgroundImage: `url(${imagen})`, backgroundSize: "cover" }} className="col-12 md:col-6 lg:col-6 ">
+      <div className="flex justify-content-center align-items-center col-12  md:col-12 lg:col-6">
+          <img src={imagen} alt="huerta" className="w-11"></img>
       </div>
     </section>
   );
