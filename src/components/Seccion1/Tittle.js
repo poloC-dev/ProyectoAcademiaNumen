@@ -3,8 +3,8 @@ const Tittle = (props) => {
     let {color,nocolor} = props;
 
   return (
-    <div className="px-3">
-        <h2><span className="text-orange-500 ">{color}</span>{nocolor}</h2>
+    <div className="text-3xl px-3">
+        <h2>{nocolor}<span className="text-orange-500 ">{color}</span></h2>
     </div>
   );
 };

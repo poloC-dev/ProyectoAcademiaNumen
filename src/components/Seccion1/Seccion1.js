@@ -1,5 +1,5 @@
 import imagen from "./Assets/huerta.jpg";
-import Button from './Button';
+import {Button} from 'primereact/button';
 import Tittle from "./Tittle";
 import Subtittle from './Subittle';
 
@@ -22,23 +22,23 @@ const frases = [
 ]
 
 const buttonText = "Discover Our Producers";
-const tittleTextColor = "Who Makes ";
-const tittleTextBlack = "Your Food?";
+const tittleTextColor = "Your Food?";
+const tittleTextBlack = "Who Makes ";
 const subtittleText = "Our mission is to help grow the local food ecosystem in BC and across Canada. Why?"
 
 const Seccion1 = () => {
   return (
-    <section className="grid my-2 p-3 md:my-2 lg:my-4">
+    <section id="seccion1" className="grid my-2 p-3 md:my-2 lg:my-4">
       <div className="col-12 pl- mb-3 md:pl-5 md:mb-3 md:col-12 lg:col-6 lg:mb-0">
         <Tittle color ={tittleTextColor} nocolor={tittleTextBlack}/>
-        <Subtittle description={subtittleText} />
+        <Subtittle description={subtittleText}  />
         {frases.map((item) => (
           <div className="flex p-3" key={item.id}> 
-            <i className="pi pi-check-circle pr-2"></i>
+            <i className="pi pi-check-circle pr-2 " style={{'fontSize': '1.5em'}}></i>
             <p className="font-semibold">{item.description}</p>
           </div>
         ))}
-        <Button text={buttonText} />
+        <Button label={buttonText} className="ml-3 p-button-warning" />
       </div>
       <div className="flex justify-content-center align-items-center col-12  md:col-12 lg:col-6">
           <img src={imagen} alt="huerta" className="w-11"></img>
