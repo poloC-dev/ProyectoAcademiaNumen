@@ -1,7 +1,10 @@
+import React, { useEffect } from "react";
 import imagen from "./Assets/huerta.jpg";
 import {Button} from 'primereact/button';
 import Tittle from "./Tittle";
 import Subtittle from './Subittle';
+import "aos/dist/aos.css";
+import AOS from "aos";
 
 const frases = [
   {
@@ -27,9 +30,15 @@ const tittleTextBlack = "Who Makes ";
 const subtittleText = "Our mission is to help grow the local food ecosystem in BC and across Canada. Why?"
 
 const Seccion1 = () => {
+
+  useEffect(() => {
+    AOS.init()
+    console.log("Hola")
+  } , []);
+
   return (
-    <section id="seccion1" className="grid my-2 p-3 md:my-2 lg:my-4">
-      <div className="col-12 pl- mb-3 md:pl-5 md:mb-3 md:col-12 lg:col-6 lg:mb-0">
+    <section id="seccion1" className="grid mx-auto p-3 md:my-2 lg:my-4">
+      <div data-aos="fade-right" data-aos-duration="2000" className="col-12 pl- mb-3 md:pl-5 md:mb-3 md:col-12 lg:col-6 lg:mb-0">
         <Tittle color ={tittleTextColor} nocolor={tittleTextBlack}/>
         <Subtittle description={subtittleText}  />
         {frases.map((item) => (
@@ -40,8 +49,8 @@ const Seccion1 = () => {
         ))}
         <Button label={buttonText} className="ml-3 p-button-warning" />
       </div>
-      <div className="flex justify-content-center align-items-center col-12  md:col-12 lg:col-6">
-          <img src={imagen} alt="huerta" className="w-11"></img>
+      <div data-aos="fade-left" data-aos-duration="2000" className="flex justify-content-center align-items-center col-12  md:col-12 lg:col-6">
+          <img src={imagen} alt="huerta" className="w-11"/>
       </div>
     </section>
   );
