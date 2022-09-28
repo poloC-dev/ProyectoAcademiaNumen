@@ -45,10 +45,7 @@ const Seccion1 = () => {
   }, []);
 
   return (
-    <section
-      id="seccion1"
-      className="grid mx-auto p-3 md:my-2 lg:my-4 bg-gray-400"
-    >
+    <section id="seccion1" className="grid mx-auto p-3 md:my-2 lg:my-4">
       <div
         data-aos="fade-right"
         data-aos-duration="2000"
