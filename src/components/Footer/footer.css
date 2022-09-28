@@ -1,0 +1,31 @@
+
+.footer{
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-items: center;
+    
+    font-family: poppins;
+    font-size: 15px;
+    line-height: 22px;
+
+    list-style: none;
+}
+
+.logo{
+    width: 110px;
+    margin-left: 55px;
+    background-repeat: no-repeat;
+}
+
+.title{
+    font-weight: 500;
+    color: #1f1f1f;
+    
+}
+
+.list{
+    margin-top: 15px;
+    font-weight: 400;
+    color: #3d3d3d;
+}
