@@ -1,0 +1,46 @@
+
+.carouselSeccion{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.titlesC{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.titleC{
+    font-family: 'Cormorant';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    text-decoration-line: underline;
+    color: #FF8126;
+    padding-right: 12px;
+}
+
+.titleC2{
+    font-family: 'Cormorant';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+}
+
+.carousel{
+    padding: 50px;
+}
+
+.imageCarousel{
+    width: 186px;
+    height: 186px;
+    background-repeat: no-repeat;
+    background-color: aliceblue;
+    border-style: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    margin-left: 10px;
+}
