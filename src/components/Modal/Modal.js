@@ -22,7 +22,7 @@ const Modal = () => {
 
   return (
     
-      <div className="card" style={{ display: "flex", width: "100%", position: "absolute",  flexDirection: "column" }} >
+      <div className="card" style={{ display: "flex", width: "100%", position: "fixed",  flexDirection: "column" }} >
                                   
         <Messages ref={message} />
                
