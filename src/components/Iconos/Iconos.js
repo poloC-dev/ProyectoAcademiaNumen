@@ -3,6 +3,7 @@ import Tittle from "../Seccion1/Tittle";
 import CardList from "./CardList";
 import "aos/dist/aos.css";
 import AOS from "aos";
+
 const Iconos = () => {
   const tittleTextColor = "the Premium Bakery Quality";
   const tittleTextBlack = "Why Choose ";
@@ -10,10 +11,12 @@ const Iconos = () => {
     AOS.init();
     console.log("Hola");
   }, []);
+
   return (
     <section
-      data-aos="fade-down"
-      data-aos-duration="2000"
+    data-aos="fade-down"
+    data-aos-duration="1500"
+      id="iconos"
       className="flex flex-column justify-content-center align-items-center"
     >
       <div className="mb-4">

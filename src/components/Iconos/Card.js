@@ -7,12 +7,10 @@ const Card = (props) => {
       style={{
         width: "230px",
         height: "280px",
-        margin: "1rem",
+        margin: ".5rem",
         padding: ".6rem",
-        textAlign: "left",
         display: "flex",
         flexDirection: "column",
-        justifyContent: "center",
         alignItems: "left",
       }}
       key={id}
@@ -20,7 +18,7 @@ const Card = (props) => {
       <i className={icon} style={{ fontSize: "2em" }}></i>
       <figcaption>
         <h3 className="my-3">{tittle}</h3>
-        <p className="">{phrase}</p>
+        <p className="pt-3">{phrase}</p>
       </figcaption>
     </figure>
   );

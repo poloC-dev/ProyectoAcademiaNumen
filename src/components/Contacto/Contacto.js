@@ -44,7 +44,7 @@ export const Contacto = () => {
   return (
     <section
       data-aos="fade-down"
-      data-aos-duration="2000"
+      data-aos-duration="1500"
       id="contacto"
       className="flex flex-column mx-auto p-3 h-full justify-content-center bg-gray-100"
     >
@@ -96,7 +96,7 @@ export const Contacto = () => {
           </span>
         </div>
         <Button
-          className="my-2 p-button-raised col-12 md:col-6 lg:col-6 "
+          className="my-2 p-button-raised p-button-warning col-12 md:col-6 lg:col-6 "
           type="submit"
           value="Send"
           label="Send"

@@ -6,7 +6,7 @@ const CardList = () => {
     {
       id: 1,
       icon: "pi pi-star text-5xl",
-      tittle: "Discover new flavours & people",
+      tittle: "Discover new flavours",
       phrase:
         "Discover new tastes, flavours and snacks and recipes to make wonderful meals. Also find out where your food comes from and who makes it.",
     },
