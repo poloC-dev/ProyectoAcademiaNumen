@@ -1,6 +1,6 @@
-import React from 'react'
-import "./carousel.css"
-import Slider from "react-slick"
+import React from 'react';
+import "./carousel.css";
+import Slider from "react-slick";
 import imagen from "./imagesCarousel/food1-01.jpg";
 import imagen2 from "./imagesCarousel/food2.jpg";
 import imagen3 from "./imagesCarousel/food3-01.jpg";
@@ -34,6 +34,8 @@ function SamplePrevArrow(props) {
   );
 }
 
+// IMAGENES:
+
 const Carousel = () => {
   const settings = {
     dots: true,
@@ -42,11 +44,37 @@ const Carousel = () => {
     slidesToShow: 5,
     slidesToScroll: 5,
     nextArrow: <SampleNextArrow />,
-    prevArrow: <SamplePrevArrow />
+    prevArrow: <SamplePrevArrow />,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: false,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          initialSlide: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      }
+    ]
   };
   return (
     <>
-    <div style={{backgroundColor: 'yellow' }} className="carouselSeccion">
+    <div className="carouselSeccion">
       <div>
         <span className='titlesC'>
           <p className='titleC'>@PremiumBakeryQuality </p>

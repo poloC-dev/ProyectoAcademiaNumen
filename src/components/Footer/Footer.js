@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <>
     <footer className="footer">
-      <span style={{ backgroundImage: `url(${imagen})`, backgroundSize: 110}} className="logo">
+      <span style={{ backgroundImage: `url(${imagen})`, backgroundSize: 110}} className="logoFooter">
       </span>
 
       <ul>

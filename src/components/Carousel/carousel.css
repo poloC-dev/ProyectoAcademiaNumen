@@ -2,6 +2,7 @@
 .carouselSeccion{
     width: 90%;
     margin: 0 auto;
+    padding-bottom: 3rem;
 }
 
 .titlesC{
@@ -32,15 +33,54 @@
 }
 
 .carousel{
-    padding: 50px;
+    padding: 2rem;
 }
 
 .imageCarousel{
     width: 186px;
     height: 186px;
     background-repeat: no-repeat;
-    background-color: aliceblue;
     border-style: hidden;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
-    margin-left: 10px;
+    margin: 0 auto;
+}
+
+/* **************RESPONSIVE************** */
+
+@media (max-width: 768px) {
+    .carouselSeccion{
+        width: 80%;
+    }
+
+    .titlesC{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 40px;
+    }
+
+    .titleC{
+        font-size: 30px;
+    }
+    
+    .titleC2{
+        font-size: 30px;
+    }
+
+    .carousel{
+        padding: 1rem;
+    }
+
+}
+
+@media (max-width: 375px) {
+    
+    .titleC{
+        font-size: 25px;
+    }
+    
+    .titleC2{
+        font-size: 25px;
+    }
+
 }
