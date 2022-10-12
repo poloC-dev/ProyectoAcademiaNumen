@@ -9,6 +9,8 @@ import imagen5 from "./imagesCarousel/food5-01.jpg";
 import imagen6 from "./imagesCarousel/food6-01.jpg";
 import imagen7 from "./imagesCarousel/food7-01.jpg";
 import imagen8 from "./imagesCarousel/food8-01.jpg";
+import imagen9 from "./imagesCarousel/food9-01.jpg";
+import imagen10 from "./imagesCarousel/food10-01.jpg";
 
 // FLECHAS:
 
@@ -104,6 +106,12 @@ const Carousel = () => {
             </div>
             <div>
               <div style={{ backgroundImage: `url(${imagen8})`, width: 186, height: 186, backgroundSize: 156, backgroundPosition: "center"}} className="imageCarousel"></div>
+            </div>
+            <div>
+              <div style={{ backgroundImage: `url(${imagen9})`, width: 186, height: 186, backgroundSize: 156, backgroundPosition: "center"}} className="imageCarousel"></div>
+            </div>
+            <div>
+              <div style={{ backgroundImage: `url(${imagen10})`, width: 186, height: 186, backgroundSize: 156, backgroundPosition: "center"}} className="imageCarousel"></div>
             </div>
           </Slider>
         </div>
