@@ -6,7 +6,7 @@ import './BannerMarca.css';
 const BannerMarca = () => {
   return (
     <div className='banner-container banner-bg-pattern'>
-      <p className='banner-p'>Our Charity Partner, City Bakery</p>
+      <p className='banner-p'>Our Charity Partner, <br className='banner-br'></br>City Bakery</p>
       
       <div className='banner-logo'>
         <img src={logo} alt="bg"></img>

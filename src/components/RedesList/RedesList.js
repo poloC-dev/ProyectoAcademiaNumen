@@ -1,12 +1,12 @@
 import React from 'react';
 import './RedesList.css';
+import messenger from './resources/messenger.svg'
 import 'primeicons/primeicons.css';
 
 const RedesList = () => {
   return (
     <div className='social-container bg-pattern'>
-      <p className='redes-p'>Tell a friend</p>
-      
+      <p className='redes-p'>Tell a friend</p>      
       <div className='social-icons'>
         <a
           href="/"
@@ -31,6 +31,12 @@ const RedesList = () => {
           className='icons'
         >
           <i className="pi pi-whatsapp" style={{'fontSize': '32px'}} ></i>
+        </a>
+        <a
+          href="/"
+          style={{'height':'60px','fill': 'var(--surface-a)', 'strokeOpacity':'0', 'backgroundColor': 'var(--surface-a)', 'borderRadius':'50%'}}
+        >
+          <img src={messenger} alt='messenger' ></img>
         </a>
         <a
           href="/"

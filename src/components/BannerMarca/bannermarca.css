@@ -1,14 +1,27 @@
-p.banner-p {
-    font-family: 'Corben';
-    font-size: 40px;
-    color: white;
-}
 .banner-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     height: 395px;
+}
+.banner-bg-pattern {
+    background-color: #6090C3;
+    background-image: url("./resources/MaskGroup.svg");
+}
+p.banner-p {
+    font-family: 'Corben';
+    font-size: 40px;
+    color: white;
+    text-align: center;
+}
+.banner-br {
+    display:none !important;
+}
+@media (max-width: 600px) {
+    .banner-br {
+        display:block !important;
+    }
 }
 .banner-logo {
     display: flex;
@@ -17,18 +30,8 @@ p.banner-p {
     height: 130px;
     justify-content: space-between;
 }
-.banner-bg-pattern {
-    background-color: #6090C3;
-    background-image: url("./resources/MaskGroup.svg");
-}
-.icons {
-    padding: 14px;
-    border-radius: 50%;
-    color: var(--surface-a);
-    background-color: var(--orange-500);
-    min-width: 60px;
-    min-height: 60px;
-}
+
+
 .p-button-label {
     font-weight: 500 !important
     ;
