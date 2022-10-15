@@ -10,3 +10,24 @@
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 1rem;
   }
+
+  .p-card-title {
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    text-align: center;
+  }
+
+  .button-demo .template .p-button.google:hover {
+    background-position: left bottom;
+}
+
+h2 {
+  font-family: Roboto;
+  font-size: xx-large;
+  font-weight:bolder;
+  display: flex;
+  justify-content: center; 
+  text-align: center;
+}
