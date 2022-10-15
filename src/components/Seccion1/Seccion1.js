@@ -51,7 +51,7 @@ const Seccion1 = () => {
       id="seccion1"
       className="grid mx-auto p-2 md:my-2 lg:my-4"
     >
-      <div className="col-12 pl- mb-3 md:pl-5 md:mb-3 md:col-12 lg:col- lg:mb-0">
+      <div className="col-12 pl- mb-3 md:pl-5 md:mb-3 md:col-12 lg:col-6 lg:mb-0">
         <Tittle color={tittleTextColor} nocolor={tittleTextBlack} />
         <Subtittle description={subtittleText} />
         {frases.map((item) => (
@@ -70,7 +70,7 @@ const Seccion1 = () => {
           style={{ maxWidth: "600px" }}
           src={imagen}
           alt="huerta"
-          className="w-11 mx-auto"
+          className="w-11"
         />
       </div>
     </section>
