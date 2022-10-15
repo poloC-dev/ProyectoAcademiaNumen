@@ -14,8 +14,8 @@ const Iconos = () => {
 
   return (
     <section
-    data-aos="fade-down"
-    data-aos-duration="1500"
+      data-aos="fade-down"
+      data-aos-duration="1500"
       id="iconos"
       className="flex flex-column justify-content-center align-items-center"
     >

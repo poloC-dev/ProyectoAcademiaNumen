@@ -22,7 +22,7 @@ const CardList = () => {
       icon: "pi pi-user-plus text-5xl",
       tittle: "Support your community",
       phrase:
-        "By buying in bulk from local and Canadian producers you are helping grow local food ecosystem, creating jobs and supporting families and entrepeneurs in your community.",
+        "By buying in bulk from local and Canadian producers you are helping grow local food ecosystem.",
     },
     {
       id: 4,

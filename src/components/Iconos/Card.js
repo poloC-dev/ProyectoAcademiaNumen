@@ -6,7 +6,7 @@ const Card = (props) => {
     <figure
       style={{
         width: "230px",
-        height: "280px",
+        height: "220px",
         margin: ".5rem",
         padding: ".6rem",
         display: "flex",
@@ -17,8 +17,8 @@ const Card = (props) => {
     >
       <i className={icon} style={{ fontSize: "2em" }}></i>
       <figcaption>
-        <h3 className="my-3">{tittle}</h3>
-        <p className="pt-3">{phrase}</p>
+        <h3 className="my-2">{tittle}</h3>
+        <p className="pt-1">{phrase}</p>
       </figcaption>
     </figure>
   );

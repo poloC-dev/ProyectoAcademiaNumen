@@ -49,9 +49,9 @@ const Seccion1 = () => {
       data-aos="fade-up"
       data-aos-duration="1500"
       id="seccion1"
-      className="grid mx-auto p-3 md:my-2 lg:my-4"
+      className="grid mx-auto p-2 md:my-2 lg:my-4"
     >
-      <div className="col-12 pl- mb-3 md:pl-5 md:mb-3 md:col-12 lg:col-6 lg:mb-0">
+      <div className="col-12 pl- mb-3 md:pl-5 md:mb-3 md:col-12 lg:col- lg:mb-0">
         <Tittle color={tittleTextColor} nocolor={tittleTextBlack} />
         <Subtittle description={subtittleText} />
         {frases.map((item) => (
@@ -66,7 +66,12 @@ const Seccion1 = () => {
         <Button label={buttonText} className="ml-3 p-button-warning" />
       </div>
       <div className="flex justify-content-center align-items-center col-12  md:col-12 lg:col-6">
-        <img src={imagen} alt="huerta" className="w-11" />
+        <img
+          style={{ maxWidth: "600px" }}
+          src={imagen}
+          alt="huerta"
+          className="w-11 mx-auto"
+        />
       </div>
     </section>
   );
