@@ -9,7 +9,7 @@ const Producto = ({data, addToCart}) => {
     const {id, name, price, discount, url } = data;
 
     const header = (
-      <img alt="Card"  style={{height:'180px', width:'270px'}}/>
+      <img alt="Card" src={url} style={{height:'180px', width:'270px'}}/>
       );
     const footer = (
       <span>
