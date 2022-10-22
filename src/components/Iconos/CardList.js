@@ -50,6 +50,7 @@ const CardList = () => {
     >
       {cardsData.map((item) => (
         <Card
+          key={item.id}
           id={item.id}
           icon={item.icon}
           tittle={item.tittle}

@@ -41,7 +41,6 @@ const subtittleText =
 const Seccion1 = () => {
   useEffect(() => {
     AOS.init();
-    console.log("Hola");
   }, []);
 
   return (

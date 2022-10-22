@@ -10,11 +10,8 @@ import  Seccion2 from './components/Seccion2/Seccion2';
 import  Carousel from './components/Carousel/Carousel';
 import  RedesList from './components/RedesList/RedesList';
 import  Contacto from './components/Contacto/Contacto';
-import  Testimonios from './components/Testimonios/Testimonios';
-import  ProductosDestacados from './components/ProductosDestacados/ProductosDestacados';
 import  Footer from './components/Footer/Footer';
 import  IconoWsp from './components/IconoWsp/IconoWsp';
-import  Empleados from './components/Empleados/Empleados';
 
 
 
@@ -30,9 +27,6 @@ function App() {
       <BannerMarca />
       <Seccion2 />
       <Carousel />
-      <Empleados />
-      <ProductosDestacados  />
-      <Testimonios />
       <Contacto />
       <RedesList />
       <IconoWsp />

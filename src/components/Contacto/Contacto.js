@@ -1,18 +1,28 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import { InputText } from "primereact/inputtext";
 import { InputTextarea } from "primereact/inputtextarea";
 import { Button } from "primereact/button";
 import emailjs from "emailjs-com";
 import Tittle from "../Seccion1/Tittle";
-import "aos/dist/aos.css";
-import AOS from "aos";
 
 export const Contacto = () => {
-  useEffect(() => {
-    AOS.init();
-    console.log("Hola");
-  }, []);
+  const [status, setStatus] = useState("");
 
+  useEffect(() => {
+    if (status === "SUCCESS") {
+      setTimeout(() => {
+        setStatus("");
+      }, 3000);
+    }
+  }, [status]);
+
+  const renderAlert = () => {
+    return (
+      <div className="p-3 mb-3 bg-blue-100 text-blue-700 border-round">
+        <p>your message submitted succesfully</p>
+      </div>
+    );
+  };
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -27,8 +37,8 @@ export const Contacto = () => {
       )
       .then(
         (result) => {
-          alert("Message sended!!");
-          console.log(result.text);
+          setStatus("SUCCESS");
+          console.log(result);
         },
         (error) => {
           alert("Cant send email, sorry!");
@@ -42,12 +52,7 @@ export const Contacto = () => {
   const tittleTextBlack = "Leave us ";
 
   return (
-    <section
-      data-aos="fade-down"
-      data-aos-duration="1500"
-      id="contacto"
-      className="flex flex-column mx-auto p-3 h-full justify-content-center bg-gray-100"
-    >
+    <section className="flex flex-column mx-auto p-3 h-full justify-content-center bg-gray-100">
       <div className="align-self-center">
         <Tittle
           className="text-4xl"
@@ -60,6 +65,7 @@ export const Contacto = () => {
         onSubmit={sendEmail}
         className="flex flex-column justify-content-center align-items-center p-1 mt-2 border-round"
       >
+        {status && renderAlert()}
         <div className="flex flex-column py-3 col-12 md:col-10 lg:col-6">
           <span className="p-float-label p-input-icon-right">
             <InputText

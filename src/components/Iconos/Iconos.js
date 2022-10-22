@@ -9,7 +9,6 @@ const Iconos = () => {
   const tittleTextBlack = "Why Choose ";
   useEffect(() => {
     AOS.init();
-    console.log("Hola");
   }, []);
 
   return (
