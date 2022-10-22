@@ -2,14 +2,41 @@
 .box {
     padding: 1rem;
     margin: 1rem;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
+    box-sizing: border-box;
   }
 
 .grid-responsive {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 1rem;
+    justify-items: center; 
+    align-items: center;
+    
   }
+
+.p-card {
+  display: grid;
+  padding-Top: 0px;
+  background: #F7F5F0 !important;
+  width: 270px;
+  height: auto;
+  margin-Bottom: 1em;
+  margin-Top: 0.5em;
+  color: #353333;
+  font-Family: Roboto;
+  font-Weight: 300; 
+  font-Size: 100%;
+  border-radius: 20px !important
+}
+
+
+ .p-card:hover {
+  
+  transform: scale(1.03);
+  transition-duration: 0.2s;
+  
+ } 
 
   .p-card-title {
     height: 45px;
@@ -19,9 +46,8 @@
     text-align: center;
   }
 
-  .button-demo .template .p-button.google:hover {
-    background-position: left bottom;
-}
+
+
 
 h2 {
   font-family: Roboto;
