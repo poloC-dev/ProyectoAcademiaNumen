@@ -1,12 +1,7 @@
 const Subtittle = (props) => {
+  let { description } = props;
 
-    let {description} = props;
-
-  return (
-    <p className="p-3">
-      {description}
-    </p>
-  );
+  return <p className="p-3 font-bold">{description}</p>;
 };
 
 export default Subtittle;
