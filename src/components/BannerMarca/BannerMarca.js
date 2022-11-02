@@ -1,7 +1,7 @@
 import React from 'react'
 import logo from './resources/logo.svg'
 import { Button } from 'primereact/button';
-import './BannerMarca.css';
+import './bannermarca.css';
 
 const BannerMarca = () => {
   return (
