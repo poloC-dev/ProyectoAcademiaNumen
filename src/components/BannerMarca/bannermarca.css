@@ -32,7 +32,6 @@ p.banner-p {
     font-weight: 500 !important
     ;
 }
-
 @media (max-width: 600px) {
     .banner-br {
         display:block !important;
