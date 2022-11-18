@@ -19,7 +19,7 @@ export const Contacto = () => {
   const renderAlert = () => {
     return (
       <div className="p-3 mb-3 bg-blue-100 text-blue-700 border-round">
-        <p>your message submitted succesfully</p>
+        <p>su mensaje se envió satisfactoriamente</p>
       </div>
     );
   };
@@ -48,8 +48,8 @@ export const Contacto = () => {
     e.target.reset();
   };
 
-  const tittleTextColor = "your opinion!";
-  const tittleTextBlack = "Leave us ";
+  const tittleTextColor = "tu opinion!";
+  const tittleTextBlack = "Dejanos ";
 
   return (
     <section className="flex flex-column mx-auto p-3 h-full justify-content-center bg-gray-100">
@@ -74,7 +74,7 @@ export const Contacto = () => {
               pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
               required
             />
-            <label htmlFor="name">Your name </label>
+            <label htmlFor="name">Nombre </label>
             <i className="pi pi-user" />
           </span>
         </div>
@@ -86,7 +86,7 @@ export const Contacto = () => {
               pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$"
               required
             />
-            <label htmlFor="email">Your email</label>
+            <label htmlFor="email">Correo electronico</label>
             <i className="pi pi-envelope" />
           </span>
         </div>
@@ -98,14 +98,14 @@ export const Contacto = () => {
               style={{ resize: "none", height: "150px" }}
               required
             />
-            <label htmlFor="message">Message</label>
+            <label htmlFor="message">Mensaje</label>
           </span>
         </div>
         <Button
           className="my-2 p-button-raised p-button-warning col-12 md:col-6 lg:col-6 "
           type="submit"
           value="Send"
-          label="Send"
+          label="Enviar"
         />
       </form>
     </section>

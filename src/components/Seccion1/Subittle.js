@@ -1,3 +1,4 @@
+import React from "react";
 const Subtittle = (props) => {
   let { description } = props;
 

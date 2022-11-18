@@ -13,7 +13,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.4.0",
-    "react-scripts": "5.0.1",
+    "react-scripts": "^2.1.3",
     "react-slick": "^0.29.0",
     "slick-carousel": "^1.8.1"
   },
@@ -41,5 +41,18 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "- Primereact/Primeicons\r     - npm install primereact primeicons\r - Primeflex\r     - npm install primeflex\r - Emailjs\r     - npm install emailjs-com --save\r - JsonServer\r - Axios\r - React-slick (carousel)\r - React-router-dom\r - Aos (https://michalsnik.github.io/aos/)",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/poloC-dev/ProyectoAcademiaNumen.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/poloC-dev/ProyectoAcademiaNumen/issues"
+  },
+  "homepage": "https://github.com/poloC-dev/ProyectoAcademiaNumen#readme"
 }

@@ -10,33 +10,32 @@ const frases = [
   {
     id: 1,
     description:
-      "Because it connects us to the land we live on, and to the people who live here.",
+      "Porque nos conecta con la tierra en la que vivimos y con las personas que viven aquí.",
   },
   {
     id: 2,
     description:
-      "Because it's more meaningful to cook and eat something made by a person nearby than by some distant corporation.",
+      "Porque es más significativo cocinar y comer algo hecho por una persona cercana que por una corporación distante.",
   },
   {
     id: 3,
     description:
-      "Because good local food makes our corner of the world a better place to live.",
+      "Porque la buena comida local hace de nuestro rincón del mundo un lugar mejor para vivir.",
   },
   {
     id: 4,
-    description: "Because it's support local jobs.",
+    description: "Porque es apoyar empleos locales.",
   },
   {
     id: 5,
-    description: "Because it makes more sense for the environment.",
+    description: "Porque tiene más sentido para el medio ambiente.",
   },
 ];
-
-const buttonText = "Discover Our Producers";
-const tittleTextColor = "Your Food?";
-const tittleTextBlack = "Who Makes ";
+const buttonText = "Descubre a nuestros productores";
+const tittleTextColor = "tu plato?";
+const tittleTextBlack = "Quien hace ";
 const subtittleText =
-  "Our mission is to help grow the local food ecosystem in BC and across Canada. Why?";
+  "Nuestra misión es ayudar a hacer crecer el ecosistema alimentario local en Argentina. ¿Por qué?";
 
 const Seccion1 = () => {
   useEffect(() => {

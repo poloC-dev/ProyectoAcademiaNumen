@@ -5,8 +5,8 @@ import "aos/dist/aos.css";
 import AOS from "aos";
 
 const Iconos = () => {
-  const tittleTextColor = "the Premium Bakery Quality";
-  const tittleTextBlack = "Why Choose ";
+  const tittleTextColor = "nuesto restaurant?";
+  const tittleTextBlack = "Por que elegir";
   useEffect(() => {
     AOS.init();
   }, []);

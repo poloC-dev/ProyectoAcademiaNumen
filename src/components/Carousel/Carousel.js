@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import "./carousel.css";
 import Slider from "react-slick";
 import imagen from "./imagesCarousel/food1-01.jpg";
@@ -19,7 +19,7 @@ function SampleNextArrow(props) {
   return (
     <div
       className={className}
-      style={{ ...style, display: "block"}}
+      style={{ ...style, display: "block" }}
       onClick={onClick}
     />
   );
@@ -53,67 +53,157 @@ const Carousel = () => {
         settings: {
           slidesToShow: 3,
           infinite: false,
-          dots: true
-        }
+          dots: true,
+        },
       },
       {
         breakpoint: 600,
         settings: {
           slidesToShow: 2,
-        }
+        },
       },
       {
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
-        }
-      }
-    ]
+        },
+      },
+    ],
   };
   return (
     <>
-    <div className="carouselSeccion">
-      <div>
-        <span className='titlesC'>
-          <p className='titleC'>@PremiumBakeryQuality </p>
-          <p className='titleC2'> on Instagram</p>
-        </span>
+      <div className="carouselSeccion">
+        <div>
+          <span className="titlesC">
+            <p className="titleC">@PremiumBakeryQuality </p>
+            <p className="titleC2"> en Instagram</p>
+          </span>
           <Slider {...settings} className="carousel">
             <div>
-              <div style={{ backgroundImage: `url(${imagen})`, width: 186, height: 186, backgroundSize: 156, backgroundPosition: "center"}} className="imageCarousel"></div>
+              <div
+                style={{
+                  backgroundImage: `url(${imagen})`,
+                  width: 186,
+                  height: 186,
+                  backgroundSize: 156,
+                  backgroundPosition: "center",
+                }}
+                className="imageCarousel"
+              ></div>
             </div>
             <div>
-              <div style={{ backgroundImage: `url(${imagen2})`, width: 186, height: 186, backgroundSize: 156, backgroundPosition: "center"}} className="imageCarousel"></div>
+              <div
+                style={{
+                  backgroundImage: `url(${imagen2})`,
+                  width: 186,
+                  height: 186,
+                  backgroundSize: 156,
+                  backgroundPosition: "center",
+                }}
+                className="imageCarousel"
+              ></div>
             </div>
             <div>
-              <div style={{ backgroundImage: `url(${imagen3})`, width: 186, height: 186, backgroundSize: 156, backgroundPosition: "center"}} className="imageCarousel"></div>
+              <div
+                style={{
+                  backgroundImage: `url(${imagen3})`,
+                  width: 186,
+                  height: 186,
+                  backgroundSize: 156,
+                  backgroundPosition: "center",
+                }}
+                className="imageCarousel"
+              ></div>
             </div>
             <div>
-              <div style={{ backgroundImage: `url(${imagen4})`, width: 186, height: 186, backgroundSize: 156, backgroundPosition: "center"}} className="imageCarousel"></div>
+              <div
+                style={{
+                  backgroundImage: `url(${imagen4})`,
+                  width: 186,
+                  height: 186,
+                  backgroundSize: 156,
+                  backgroundPosition: "center",
+                }}
+                className="imageCarousel"
+              ></div>
             </div>
             <div>
-              <div style={{ backgroundImage: `url(${imagen5})`, width: 186, height: 186, backgroundSize: 156, backgroundPosition: "center"}} className="imageCarousel"></div>
+              <div
+                style={{
+                  backgroundImage: `url(${imagen5})`,
+                  width: 186,
+                  height: 186,
+                  backgroundSize: 156,
+                  backgroundPosition: "center",
+                }}
+                className="imageCarousel"
+              ></div>
             </div>
             <div>
-              <div style={{ backgroundImage: `url(${imagen6})`, width: 186, height: 186, backgroundSize: 156, backgroundPosition: "center"}} className="imageCarousel"></div>
+              <div
+                style={{
+                  backgroundImage: `url(${imagen6})`,
+                  width: 186,
+                  height: 186,
+                  backgroundSize: 156,
+                  backgroundPosition: "center",
+                }}
+                className="imageCarousel"
+              ></div>
             </div>
             <div>
-              <div style={{ backgroundImage: `url(${imagen7})`, width: 186, height: 186, backgroundSize: 156, backgroundPosition: "center"}} className="imageCarousel"></div>
+              <div
+                style={{
+                  backgroundImage: `url(${imagen7})`,
+                  width: 186,
+                  height: 186,
+                  backgroundSize: 156,
+                  backgroundPosition: "center",
+                }}
+                className="imageCarousel"
+              ></div>
             </div>
             <div>
-              <div style={{ backgroundImage: `url(${imagen8})`, width: 186, height: 186, backgroundSize: 156, backgroundPosition: "center"}} className="imageCarousel"></div>
+              <div
+                style={{
+                  backgroundImage: `url(${imagen8})`,
+                  width: 186,
+                  height: 186,
+                  backgroundSize: 156,
+                  backgroundPosition: "center",
+                }}
+                className="imageCarousel"
+              ></div>
             </div>
             <div>
-              <div style={{ backgroundImage: `url(${imagen9})`, width: 186, height: 186, backgroundSize: 156, backgroundPosition: "center"}} className="imageCarousel"></div>
+              <div
+                style={{
+                  backgroundImage: `url(${imagen9})`,
+                  width: 186,
+                  height: 186,
+                  backgroundSize: 156,
+                  backgroundPosition: "center",
+                }}
+                className="imageCarousel"
+              ></div>
             </div>
             <div>
-              <div style={{ backgroundImage: `url(${imagen10})`, width: 186, height: 186, backgroundSize: 156, backgroundPosition: "center"}} className="imageCarousel"></div>
+              <div
+                style={{
+                  backgroundImage: `url(${imagen10})`,
+                  width: 186,
+                  height: 186,
+                  backgroundSize: 156,
+                  backgroundPosition: "center",
+                }}
+                className="imageCarousel"
+              ></div>
             </div>
           </Slider>
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default Carousel
+export default Carousel;

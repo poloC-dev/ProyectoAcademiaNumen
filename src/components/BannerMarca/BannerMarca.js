@@ -6,14 +6,14 @@ import './bannermarca.css';
 const BannerMarca = () => {
   return (
     <div className='banner-container banner-bg-pattern'>
-      <p className='banner-p'>Our Charity Partner, <br className='banner-br'></br>City Bakery</p>
+      <p className='banner-p'>Nuestro patrocinador <br className='banner-br'></br>City Bakery</p>
       
       <div className='banner-logo'>
         <img src={logo} alt="bg"></img>
         
       </div>
       <span>
-          <Button label="Learn more about City Bakery" style={{background: "#FF8126", border: "white", borderRadius: "5px", fontFamily: "Poppins", fontWeight: "500", fontSize: "18px", height:'45px', width:'330px', marginTop: "0", zIndex: "0"}} />
+          <Button label="Aprende mas sobre City Bakery" style={{background: "#FF8126", border: "white", borderRadius: "5px", fontFamily: "Poppins", fontWeight: "500", fontSize: "18px", height:'45px', width:'330px', marginTop: "0", zIndex: "0"}} />
       </span>
     </div>
   )

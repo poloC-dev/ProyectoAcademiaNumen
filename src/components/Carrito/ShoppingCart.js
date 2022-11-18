@@ -1,15 +1,13 @@
-import { useReducer } from "react";
-import { TYPES } from "../actions/actions";
-import {
-  shoppingInitialState,
-  shoppingReducer,
-} from "../reducer/shoppingReducer";
+import React, { useReducer } from "react";
+import { TYPES } from "../../actions/actions";
+import { shoppingInitialState, shoppingReducer } from "../../reducer/reducer";
 import CartItem from "./CartItem";
+
 
 const ShoppingCart = () => {
   const [state, dispatch] = useReducer(shoppingReducer, shoppingInitialState);
 
-  const { products, cart } = state;
+  const { cart } = state;
 
   // la unica forma de pasarle el id a la funcion reductora es por medio del dispatch()
   // abro la propiedad action y uso el type correspondiente y en payload paso el id

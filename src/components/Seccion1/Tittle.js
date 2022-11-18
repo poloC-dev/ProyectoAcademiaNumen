@@ -1,3 +1,4 @@
+import React from "react";
 const Tittle = (props) => {
   let { color, nocolor } = props;
 
