@@ -10,21 +10,27 @@ const Productos = () => {
   const [state, dispatch] = useReducer(shoppingReducer, shoppingInitialState);
   const [data, setData] = useState([]);
 
+  const { products } = state;
+
   const addToCart = (id) => dispatch({ type: TYPES.ADD_TO_CART, payload: id });
 
-  const getData = async () => {
-    try {
-      const response = await axios.get(
-        "https://numen-react-vercel-server.vercel.app/products"
-      );
-      setData(response.data);
-    } catch (error) {
-      console.log(error);
-    }
-  };
+  // const getData = async () => {
+  //   try {
+  //     const response = await axios.get(
+  //       "https://numen-react-vercel-server.vercel.app/products"
+  //     );
+  //     setData(response.data);
+  //   } catch (error) {
+  //     console.log(error);
+  //   }
+  // };
+
+  // useEffect(() => {
+  //   getData();
+  // }, []);
 
   useEffect(() => {
-    getData();
+    setData(products);
   }, []);
 
   return (

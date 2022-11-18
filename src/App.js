@@ -11,6 +11,7 @@ import Carousel from "./components/Carousel/Carousel";
 import RedesList from "./components/RedesList/RedesList";
 import Contacto from "./components/Contacto/Contacto";
 import Footer from "./components/Footer/Footer";
+import ShoppingCart from "./components/Carrito/ShoppingCart";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Modal />
       <Navbar />
       <HeroBanner />
+      <ShoppingCart />
       <Productos />
       <Iconos />
       <Seccion1 />

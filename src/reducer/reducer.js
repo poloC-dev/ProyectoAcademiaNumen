@@ -1,7 +1,7 @@
 import { TYPES } from "../actions/actions";
 
 export const shoppingInitialState = {
-  product: [
+  products: [
     {
       id: 1,
       name: "Pasta primavera",
@@ -122,11 +122,32 @@ export const shoppingInitialState = {
       discount: 125,
     },
   ],
-  cart: [],
+  cart: [
+    {
+      id: 1,
+      name: "Pasta primavera",
+      url:
+        "https://aprende.com/wp-content/uploads/2020/02/iStock-1142869361.jpg",
+      price: 100,
+      discount: 80,
+      quantity: 1,
+    },
+    {
+      id: 2,
+      name: "Pasta primavera",
+      url:
+        "https://aprende.com/wp-content/uploads/2020/02/iStock-1142869361.jpg",
+      price: 100,
+      discount: 80,
+      quantity: 1,
+    },
+  ],
 };
 
 export function shoppingReducer(state, action) {
-  // ACTION contiene las acciones que voy a realizar y necesito el .type para acceder a ellas
+  console.log("se activo el shoppingreducer");
+  console.log("state ", state);
+  console.log("action", action);
   switch (action.type) {
     case TYPES.READ_STATE: {
       return {
@@ -136,14 +157,12 @@ export function shoppingReducer(state, action) {
       };
     }
     case TYPES.ADD_TO_CART: {
-      // me meto al estado y guardo el objeto que coincida con el id en el mapeo para poder agregarlo al carrito
       const newItem = state.products.find(
         (product) => product.id === action.payload
       );
-      // busco si ya hay un item con el mismo id en el carrito
+      console.log("newitem", newItem);
       const itemInCart = state.cart.find((item) => item.id === newItem.id);
-
-      //   si encuentra un item igual en el carrito suma +1, sino lo agrega
+      console.log("itemincart", itemInCart);
       return itemInCart
         ? {
             ...state,
@@ -157,9 +176,6 @@ export function shoppingReducer(state, action) {
             ...state,
             cart: [...state.cart, { ...newItem, quantity: 1 }],
           };
-      //   guardo una copia de state para no perder lo anterior y que no se rompa nada
-      //   despues en el cart guardo una copia de state.cart que seria lo que habia en el carrito previamente para no perder la data
-      //   le seteo una variable cantidad para contar
     }
     case TYPES.REMOVE_ONE_PRODUCT: {
       const itemToDelete = state.cart.find(

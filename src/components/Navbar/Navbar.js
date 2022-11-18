@@ -8,7 +8,7 @@ export default function Navbar() {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
   const [state, dispatch] = useReducer(shoppingReducer, shoppingInitialState);
-  const { products, cart } = state;
+  const { cart } = state;
 
   console.log(cart);
   console.log(cart.length);

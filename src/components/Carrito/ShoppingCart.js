@@ -36,6 +36,7 @@ const ShoppingCart = () => {
           />
         ))}
       </div>
+      <p>Cart length en shoppingcart{cart.length}</p>
       <button onClick={clearCart}>Limpiar Carrito</button>
     </>
   );
