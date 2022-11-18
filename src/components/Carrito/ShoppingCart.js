@@ -3,7 +3,6 @@ import { TYPES } from "../../actions/actions";
 import { shoppingInitialState, shoppingReducer } from "../../reducer/reducer";
 import CartItem from "./CartItem";
 
-
 const ShoppingCart = () => {
   const [state, dispatch] = useReducer(shoppingReducer, shoppingInitialState);
 

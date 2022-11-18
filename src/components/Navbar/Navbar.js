@@ -1,10 +1,17 @@
 import "primeicons/primeicons.css";
 import "./Navbar.css";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useReducer } from "react";
+import { shoppingInitialState, shoppingReducer } from "../../reducer/reducer";
 
 export default function Navbar() {
   const [toggleMenu, setToggleMenu] = useState(false);
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+
+  const [state, dispatch] = useReducer(shoppingReducer, shoppingInitialState);
+  const { products, cart } = state;
+
+  console.log(cart);
+  console.log(cart.length);
 
   const toggleNav = () => {
     setToggleMenu(!toggleMenu);
@@ -34,13 +41,14 @@ export default function Navbar() {
           <ul className="list">
             <li className="items">Inicio</li>
             <li className="items">Productos</li>
-            <li className="items">Contacto</li>
             <li className="items">
               <i
                 className="pi pi-shopping-cart"
                 style={{ fontSize: "1.5rem" }}
               ></i>
-              <span></span>
+              <span className="codigo">
+                {cart.length > 0 ? cart.length : 0}
+              </span>
             </li>
           </ul>
         )}

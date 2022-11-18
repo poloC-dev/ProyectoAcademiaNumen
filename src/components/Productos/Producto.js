@@ -16,7 +16,7 @@ const Producto = ({ data, addToCart }) => {
         onClick={() => addToCart(id)}
         icon="pi pi-shopping-cart"
         className="p-button-warning"
-        label="Comprar"
+        label="Agregar al carrito"
         style={{
           fontFamily: "Roboto",
           fontWeight: "500",
