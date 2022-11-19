@@ -3,7 +3,7 @@ import { Card } from "primereact/card";
 import { Button } from "primereact/button";
 
 const CartItem = ({ data, deleteFromCart, addToCart }) => {
-  const { id, name, price, quantity, url } = data;
+  const { id, name, price, quantity } = data;
   const footer = (
     <span>
       <Button

@@ -1,6 +1,5 @@
 import React from "react";
 import "./RedesList.css";
-import messenger from "./resources/messenger.svg";
 import "primeicons/primeicons.css";
 
 const RedesList = () => {
