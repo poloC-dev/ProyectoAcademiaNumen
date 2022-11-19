@@ -1,17 +1,14 @@
 import "primeicons/primeicons.css";
 import "./Navbar.css";
-import React, { useState, useEffect, useReducer } from "react";
-import { shoppingInitialState, shoppingReducer } from "../../reducer/reducer";
+import React, { useState, useEffect, useContext } from "react";
+import { CartContext } from "../../context/context";
+import CarritoModal from "../Carrito/CarritoModal";
 
 export default function Navbar() {
   const [toggleMenu, setToggleMenu] = useState(false);
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
-
-  const [state, dispatch] = useReducer(shoppingReducer, shoppingInitialState);
-  const { cart } = state;
-
-  console.log(cart);
-  console.log(cart.length);
+  const [openModal, setOpenModal] = useState(false);
+  const { cart } = useContext(CartContext);
 
   const toggleNav = () => {
     setToggleMenu(!toggleMenu);
@@ -30,33 +27,50 @@ export default function Navbar() {
   }, []);
 
   return (
-    <div className="navcontainer">
-      <img
-        className="logo"
-        alt="Logo"
-        src={require("../Footer/images/logo.png")}
-      />
-      <nav>
-        {(toggleMenu || screenWidth > 500) && (
-          <ul className="list">
-            <li className="items">Inicio</li>
-            <li className="items">Productos</li>
-            <li className="items">
-              <i
-                className="pi pi-shopping-cart"
-                style={{ fontSize: "1.5rem" }}
-              ></i>
-              <span className="codigo">
-                {cart.length > 0 ? cart.length : 0}
-              </span>
-            </li>
-          </ul>
-        )}
+    <>
+      <div className="navcontainer">
+        <img
+          className="logo"
+          alt="Logo"
+          src={require("../Footer/images/logo.png")}
+        />
+        <nav>
+          {(toggleMenu || screenWidth > 500) && (
+            <div className="list">
+              <div className="items">Inicio</div>
 
-        <button onClick={toggleNav} className="btn">
-          <i className="pi pi-bars"></i>
-        </button>
-      </nav>
-    </div>
+              <div className="items">Productos</div>
+
+              <button
+                onClick={() => {
+                  setOpenModal(true);
+                }}
+                className="nav-bag items"
+              >
+                <i
+                  className="pi pi-shopping-cart"
+                  style={{ fontSize: "2rem" }}
+                ></i>
+                <span className="bag-quantity">
+                  <span>{cart.length > 0 ? cart.length : 0}</span>
+                </span>
+              </button>
+            </div>
+          )}
+
+          <button onClick={toggleNav} className="btn">
+            <i className="pi pi-bars"></i>
+          </button>
+        </nav>
+      </div>
+      <CarritoModal
+        titulo="Carrito"
+        mostrarHeader={true}
+        open={openModal}
+        onClose={() => {
+          setOpenModal(false);
+        }}
+      />
+    </>
   );
 }

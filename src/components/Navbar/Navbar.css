@@ -11,13 +11,17 @@
     
 }
 
+.list>button{
+    border: none;
+    background-color: white;
+}
 
 nav {
         
     top: 0;
     width: 100%;
     background: rgb(255, 255, 255);
-    padding: 5px;
+    padding: 15px;
     width: max-content;
 }
 
@@ -60,19 +64,32 @@ img {
     padding-left: 25px;
 }
 
-.codigo{
-    padding-left: 5px;
-    align-items: flex-start ;
-    font-size: 20px;
+.nav-bag{
+    display: flex;
+    align-items: center;
+
 }
+.bag-quantity{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25px;
+    width: 25px;
+    background-color: rgb(255, 123, 0);
+    border-radius: 50%;
+    color: whitesmoke;
+}
+
+
 @media screen and (max-width: 500px){
 
-    .list {
+    .list{
         flex-direction: column;
         height: auto;
         width: auto;
         opacity: 95%;
     }
+
     .items:nth-child(1){
         border-top: 1px solid rgba(0, 0, 0, 0.555);
         margin-top: 80px;
@@ -87,5 +104,4 @@ img {
     .btn {
         display: block;
     }
-
 }

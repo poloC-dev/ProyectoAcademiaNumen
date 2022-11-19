@@ -122,32 +122,10 @@ export const shoppingInitialState = {
       discount: 125,
     },
   ],
-  cart: [
-    {
-      id: 1,
-      name: "Pasta primavera",
-      url:
-        "https://aprende.com/wp-content/uploads/2020/02/iStock-1142869361.jpg",
-      price: 100,
-      discount: 80,
-      quantity: 1,
-    },
-    {
-      id: 2,
-      name: "Pasta primavera",
-      url:
-        "https://aprende.com/wp-content/uploads/2020/02/iStock-1142869361.jpg",
-      price: 100,
-      discount: 80,
-      quantity: 1,
-    },
-  ],
+  cart: [],
 };
 
 export function shoppingReducer(state, action) {
-  console.log("se activo el shoppingreducer");
-  console.log("state ", state);
-  console.log("action", action);
   switch (action.type) {
     case TYPES.READ_STATE: {
       return {
@@ -157,12 +135,13 @@ export function shoppingReducer(state, action) {
       };
     }
     case TYPES.ADD_TO_CART: {
+      // console.log(action.payload)
       const newItem = state.products.find(
         (product) => product.id === action.payload
       );
-      console.log("newitem", newItem);
+      // console.log("newitem", newItem);
       const itemInCart = state.cart.find((item) => item.id === newItem.id);
-      console.log("itemincart", itemInCart);
+      // console.log("itemincart", itemInCart);
       return itemInCart
         ? {
             ...state,

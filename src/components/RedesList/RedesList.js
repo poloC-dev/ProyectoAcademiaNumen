@@ -20,21 +20,6 @@ const RedesList = () => {
         <a href="/" className="icons">
           <i className="pi pi-whatsapp" style={{ fontSize: "32px" }}></i>
         </a>
-        <a
-          href="/"
-          style={{
-            height: "60px",
-            fill: "var(--surface-a)",
-            strokeOpacity: "0",
-            backgroundColor: "var(--surface-a)",
-            borderRadius: "50%",
-          }}
-        >
-          <img src={messenger} alt="messenger"></img>
-        </a>
-        <a href="/" className="icons">
-          <i className="pi pi-telegram" style={{ fontSize: "32px" }}></i>
-        </a>
       </div>
     </div>
   );

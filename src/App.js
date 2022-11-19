@@ -11,15 +11,14 @@ import Carousel from "./components/Carousel/Carousel";
 import RedesList from "./components/RedesList/RedesList";
 import Contacto from "./components/Contacto/Contacto";
 import Footer from "./components/Footer/Footer";
-import ShoppingCart from "./components/Carrito/ShoppingCart";
+import CartContextProvider from "./context/context";
 
 function App() {
   return (
-    <div>
+    <CartContextProvider>
       <Modal />
       <Navbar />
       <HeroBanner />
-      <ShoppingCart />
       <Productos />
       <Iconos />
       <Seccion1 />
@@ -28,7 +27,7 @@ function App() {
       <Contacto />
       <RedesList />
       <Footer />
-    </div>
+    </CartContextProvider>
   );
 }
 
