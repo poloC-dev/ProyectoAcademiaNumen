@@ -15,19 +15,21 @@ import CartContextProvider from "./context/context";
 
 function App() {
   return (
-    <CartContextProvider>
-      <Modal />
-      <Navbar />
-      <HeroBanner />
-      <Productos />
-      <Iconos />
-      <Seccion1 />
-      <BannerMarca />
-      <Carousel />
-      <Contacto />
-      <RedesList />
-      <Footer />
-    </CartContextProvider>
+    <>
+      <CartContextProvider>
+        <Modal />
+        <Navbar />
+        <HeroBanner />
+        <Productos />
+        <Iconos />
+        <Seccion1 />
+        <BannerMarca />
+        <Carousel />
+        <Contacto />
+        <RedesList />
+        <Footer />
+      </CartContextProvider>
+    </>
   );
 }
 
