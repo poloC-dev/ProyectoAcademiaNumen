@@ -15,7 +15,6 @@ import CartContextProvider from "./context/context";
 
 function App() {
   return (
-    <>
       <CartContextProvider>
         <Modal />
         <Navbar />
@@ -29,7 +28,6 @@ function App() {
         <RedesList />
         <Footer />
       </CartContextProvider>
-    </>
   );
 }
 
